@@ -27,6 +27,8 @@
   font-size: 40px;
   color:lightgray;
 font-style: normal;
+position: absolute;
+    top: 10px;
 }
 
 .flaticon-arrows:before { content: "\f100"; }

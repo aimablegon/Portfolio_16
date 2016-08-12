@@ -74,18 +74,61 @@ $(window).load(function() {
 	//====================================//
 	
 	var idx = 0;
-	var slideWidth = $('.slide .col-sm-4').width()
+	var slideWidth = $('.port').width()
 	$('.port .next a').click(function(){
-		$('.slide .col-sm-4').eq(idx).removeClass('on').children('img').animate({
-			left:-slideWidth
-		}).parents('.col-sm-4').next().addClass('on').children('img').css({
-			left:slideWidth
+		console.log('aa')
+		
+		$('.slide .slide_port>div').eq(idx).removeClass('on').children('div').animate({
+			'left':-slideWidth
+		}).parent('div').next().addClass('on').children('div').css({
+			'display':'block',
+			'left':slideWidth,
+			'top':0
 		}).stop().animate({
             left:'0'
         })
+        
+        idx++
+                
+        if(idx == $('.slide .slide_port>div').length){
+            idx =0
+            $('.slide .slide_port>div').eq(idx).children('div').css({
+                'left':slideWidth
+            }).stop().animate({
+                'left':'0'
+            }).parent().addClass('on').siblings().removeClass('on')
+        }
+        return false
 	})
 	
-	
+	$('.port .prev a').click(function(){
+                
+        $('.slide .slide_port>div').eq(idx).removeClass('on').children('div').animate({
+                left:slideWidth
+            }).parent('div').prev().addClass('on').children('div').css({
+                display:'block',
+                left:-slideWidth
+            }).stop().animate({
+                left:'0'
+            })
+            
+            
+            idx--
+            // console.log(idx)
+        if(idx <0){
+            idx = $('.slide .slide_port>div').length-1;
+            
+            // console.log(idx)
+            $('.slide .slide_port>div').eq(idx).children('div').css({
+                left:-slideWidth,
+                display:'block'
+            }).stop().animate({
+                left:'0'
+            }).parent().addClass('on').siblings().removeClass('on')
+        }
+        return false
+    })
+        
 });
 
 //
