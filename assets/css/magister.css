@@ -558,21 +558,22 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 }
 
 .slide{
-	width:70%; 
+	width:82%; 
 	height:558px;
 	margin:0 auto; 
 	overflow:hidden;
 	position:relative;
-	text-align: center;
+
 	
 }
-/*.port .slide_port{*/
-/*	position: relative*/
-/*}*/
+.port .slide_port{
+	text-align: center;
+}
 .port .slide .slide_port [class^="portfolio_"]{
 	width:80%;
 	float:none;
 	display:inline-block;
+	text-align:center;
 }
 .port .slide .portfolio_a>.folio{
 	display: block;

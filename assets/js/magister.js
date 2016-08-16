@@ -85,7 +85,7 @@ $(window).load(function() {
 			'left':slideWidth,
 			'top':0
 		}).stop().animate({
-            left:'0'
+            left:'85px'
         })
         
         idx++
@@ -95,7 +95,7 @@ $(window).load(function() {
             $('.slide .slide_port>div').eq(idx).children('div').css({
                 'left':slideWidth
             }).stop().animate({
-                'left':'0'
+                'left':'85px'
             }).parent().addClass('on').siblings().removeClass('on')
         }
         return false
@@ -109,7 +109,7 @@ $(window).load(function() {
                 display:'block',
                 left:-slideWidth
             }).stop().animate({
-                left:'0'
+                left:'85px'
             })
             
             
@@ -123,7 +123,7 @@ $(window).load(function() {
                 left:-slideWidth,
                 display:'block'
             }).stop().animate({
-                left:'0'
+                left:'85px'
             }).parent().addClass('on').siblings().removeClass('on')
         }
         return false
