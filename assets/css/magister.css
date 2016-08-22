@@ -58,6 +58,10 @@ body {
 	box-sizing: initial;
 	width:100px;
 }
+.gnb_menu  ul .technique{
+	width: 114px;
+    padding: 3px 13px;
+}
 .mainmenu .dropdown-menu{
 	border:0 none;
 	border-radius: 2px;
@@ -175,21 +179,14 @@ body {
 	}
 }
 
-/*@media screen and  (max-width: 520px){*/
-/*	.mainmenu .gnb_menu .gnb_btn{*/
+@media screen and  (max-width: 600px){
+	.mainmenu .gnb_menu .gnb_btn{
 
-/*	    right: 8px;*/
+	    right: 4px;
 
 
-/*	}*/
-/*	.gnb_menu ul li{*/
-/*		padding:5px 2% 5px  0;*/
-/*	}*/
-
-/*	.gnb_menu ul li>a{*/
-/*		font-size: 13px;*/
-/*	}*/
-/*}*/
+	}
+}
 
 @media screen and  (max-width: 520px){
 	.mainmenu .gnb_menu{
@@ -207,7 +204,22 @@ body {
 		top:7px;
 	    right: 7px;
 	}
+	.mainmenu .gnb_menu  ul .technique{
+	    padding: 3px 34px;
+	}
 }
+@media screen and  (max-width: 420px){
+	.mainmenu .gnb_menu ul li{
+		padding:3px 20px;
+
+	}
+	.mainmenu .gnb_menu  ul .technique{
+		width: 114px;
+	    padding: 3px 13px;
+	}
+
+}
+
 /********************************************************/
 /*             Sections - universal classes             */
 /********************************************************/
@@ -221,11 +233,11 @@ body {
 }
 #head{
 	height:500px;
-	padding:200px 0 130px;
+	padding:200px 0 140px;
 }
 
 #themes{
-	height:716px;
+	height:720px;
 	padding: 150px 0 180px;
 }
 #about{
@@ -241,19 +253,19 @@ body {
 @media screen and  (max-width: 420px){
 	#head{
 		height:600px;
-		padding:100px 0 130px;
+		padding:110px 0 130px;
 	}
 
 	#themes{
-		height:700px;
+		height:735px;
 		padding: 100px 0 215px;
 	}
 	#about{
 		height:650px;
-		padding: 100px 0 150px;
+		padding: 100px 0 200px;
 	}
 	#contact{
-		height:750px;
+		height:690px;
 		padding:100px 0 0;
 	}
 }
@@ -292,9 +304,15 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 	font-size:1.4em;
 	line-height:1.3em;
 	font-weight:normal;
-	margin-bottom:75px;
-}
+	margin-bottom:15px;
 
+}
+.row h4{
+	color:#BBB;
+}
+.row .list-inline>li>span{
+	color:#CCC;
+}
 @media (max-width: 767px) {
 	.lead {
 		font-size:1.3em;
@@ -505,8 +523,14 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 .theme-invert .tagline {
 	/*color:#222222; */
 	color:#FFF;
+	margin-bottom:30px;
 }
-
+.theme-invert .subtitle{
+	color:#ddd;
+}
+/*.theme-invert .tagline{
+	color:#000;
+}*/
 @media screen and  (max-width: 768px){
 	.theme-invert .mainmenu .dropdown-menu a {
 		color:#000;
