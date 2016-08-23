@@ -20,7 +20,7 @@ body {
 	color:rgba(255,255,255,.8);
 	font-weight: normal;
 }
-
+ol, ul{list-style: none;}
 
 
 /********************************************************/
@@ -574,7 +574,7 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 }
 
 /********************************************************/
-/*                  troisieme section                   */
+/*                  deuxieme section                    */
 /********************************************************/
 
 .port{
@@ -743,5 +743,90 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 	.port [class^="portfolio_"] img{
 		width:100%;
 
+	}
 }
+
+/********************************************************/
+/*                 troisieme section                    */
+/********************************************************/
+.row .skill{
+	width:80%;
+	text-align: center;
+	padding:0 10%;
+	margin:0 auto;
 }
+
+.row .skill .sk_li{
+	display: inline-block;
+	margin:10px;
+	width: 125px;
+	height: 125px;
+}
+.row .skill .sk_li img{
+	width:100%;
+
+}
+
+@media screen and  (max-width: 768px){
+	.row .skill{
+		width:90%;
+		text-align: center;
+		padding:0 5%;
+		margin:0 auto;
+	}
+
+	.row .skill .sk_li{
+		display: inline-block;
+		margin:10px;
+		width: 125px;
+		height: 125px;
+	}
+	.row .skill .sk_li img{
+		width:100%;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
