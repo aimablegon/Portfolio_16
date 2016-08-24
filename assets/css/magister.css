@@ -19,6 +19,7 @@ body {
 	color:#fff;
 	color:rgba(255,255,255,.8);
 	font-weight: normal;
+	overflow-x: hidden;
 }
 ol, ul{list-style: none;}
 
