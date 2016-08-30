@@ -10,7 +10,7 @@ html {
 body {
 	background:transparent;
 	min-height:100%;
-	min-width:320px;
+	mix-width:380px;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 	line-height: 1.5em;
@@ -20,10 +20,13 @@ body {
 	color:rgba(255,255,255,.8);
 	font-weight: normal;
 	overflow-x: hidden;
+
 }
 ol, ul{list-style: none;}
 
-
+/**, *::before,*::after{
+	box-sizing: content-box ;
+}*/
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
@@ -53,16 +56,27 @@ ol, ul{list-style: none;}
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 .gnb_menu  ul li{
-	padding:10px 3%;
+	padding: 3px 10px;
 	display:inline-block;
 	font-size: 14px;
-	box-sizing: initial;
-	width:100px;
+	box-sizing: content-box;
+	width:120px;
+}
+
+
+/*.gnb_menu  ul .bienvenu{
+	width:80px;
+}
+.gnb_menu  ul .portfolio{
+	width:120px;
 }
 .gnb_menu  ul .technique{
-	width: 114px;
-    padding: 3px 13px;
+	width:130px;
 }
+.gnb_menu  ul .contact{
+	width:120px;
+}*/
+
 .mainmenu .dropdown-menu{
 	border:0 none;
 	border-radius: 2px;
@@ -82,10 +96,10 @@ ol, ul{list-style: none;}
 		-webkit-border-radius: 2px;
 		   -moz-border-radius: 2px;
 		        border-radius: 2px;
-		box-sizing: initial;
+		box-sizing: content-box;;
 	}
 .navbar-toggle {
-		position:relative;
+	position:relative;
 	display:block;
 	padding: 9px 10px;
 	background: rgba(255, 255, 255, 0.2);
@@ -154,7 +168,7 @@ ol, ul{list-style: none;}
 .mainmenu .gnb_menu .gnb_btn{
 	position: absolute;
     right: 30px;
-    top: 12px;
+    top: 6px;
     width:19px;
     height:23px;
     padding:0;
@@ -162,11 +176,11 @@ ol, ul{list-style: none;}
 @media screen and  (max-width: 991px){
 	.mainmenu .gnb_menu .gnb_btn{
 	    right: 20px;
-
+		top:12px;
 	}
 	.gnb_menu ul li{
 		margin-left:-10px;
-		padding:10px 2.5%;
+		padding:10px 2%;
 
 	}
 }
@@ -176,20 +190,29 @@ ol, ul{list-style: none;}
 
 	}
 	.gnb_menu ul li{
-		padding:10px 2%;
+		padding:10px 1.5%;
 	}
 }
 
 @media screen and  (max-width: 600px){
 	.mainmenu .gnb_menu .gnb_btn{
-
 	    right: 4px;
+		top: 6px;
+	}
+	.mainmenu .gnb_menu ul li{
+		padding:3px 1%;
+	}
+	.mainmenu .gnb_menu  ul .bienvenu{
 
+		width:100px;
+	}
+	.mainmenu .gnb_menu  ul .outil{
 
+		width:80px;
 	}
 }
 
-@media screen and  (max-width: 520px){
+@media screen and  (max-width: 540px){
 	.mainmenu .gnb_menu{
 		height:65px;
 		width:100%;
@@ -197,26 +220,27 @@ ol, ul{list-style: none;}
 	.mainmenu .gnb_menu ul li{
 		text-align: justify;
 		margin-left:-10px;
-		padding:3px 40px;
-
+		padding:3px 1%;
 	}
 
 	.mainmenu .gnb_menu .gnb_btn{
 		top:7px;
 	    right: 7px;
 	}
-	.mainmenu .gnb_menu  ul .technique{
-	    padding: 3px 34px;
+	/*.mainmenu .gnb_menu  ul .bienvenu,.portfolio{
+	    padding: 3px 0 0 15px;
 	}
+	.mainmenu .gnb_menu  ul .outil,.contact{
+	    padding: 3px 15px 0 0;
+	}*/
 }
-@media screen and  (max-width: 420px){
+@media screen and  (max-width: 460px){
 	.mainmenu .gnb_menu ul li{
-		padding:3px 20px;
+		padding:3px 40px;
 
 	}
-	.mainmenu .gnb_menu  ul .technique{
-		width: 114px;
-	    padding: 3px 13px;
+	.mainmenu .gnb_menu  ul .outil{
+	    padding: 3px 50px;
 	}
 
 }
@@ -230,26 +254,31 @@ ol, ul{list-style: none;}
 	width: 100%;
 	overflow:auto;
 	top:0;
-	box-sizing: initial;
+	box-sizing: content-box;
+
+
 }
 #head{
 	height:500px;
 	padding:200px 0 140px;
+
 }
 
 #themes{
 	height:720px;
 	padding: 150px 0 180px;
+
 }
 #about{
 	height:600px;
 	padding: 200px 0 170px;
+
 }
 #contact{
 	height:790px;
 	padding: 0;
-}
 
+}
 
 @media screen and  (max-width: 420px){
 	#head{
@@ -507,7 +536,7 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 }
 .theme-invert .mainmenu .menu a {
 	color:#000;
-	box-sizing: initial;
+	box-sizing: content-box;
 	width: 100%;
 	padding:5px 10px;
 }
@@ -535,7 +564,7 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 @media screen and  (max-width: 768px){
 	.theme-invert .mainmenu .dropdown-menu a {
 		color:#000;
-		box-sizing: initial;
+		box-sizing: content-box;
 		width: 100%;
 		padding:3px ;
 	}
@@ -597,7 +626,6 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 	width:82%;
 	height:558px;
 	margin:0 auto;
-	overflow:hidden;
 	position:relative;
 
 
@@ -763,12 +791,26 @@ a:hover, a:active { color:#fff; text-decoration:none; }
 	width: 125px;
 	height: 125px;
 	opacity: 0.7;
+	position: relative;
 }
+.row .skill .sk_li::hover{
+	background-color: black;
+	width: 125px;
+	height: 125px;
+}
+
 .row .skill .sk_li img{
 	width:100%;
+	position:relative;
 
 }
+.row .skill .sk_li span{
+	width:100%;
+	display:inline-block;
+	text-align: center;
+	position:absolute;
 
+}
 @media screen and  (max-width: 768px){
 	.row .skill{
 		width:84%;
