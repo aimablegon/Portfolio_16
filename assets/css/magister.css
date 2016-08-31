@@ -208,7 +208,7 @@ ol, ul{list-style: none;}
 	}
 	.mainmenu .gnb_menu  ul .outil{
 
-		width:80px;
+		width:95px;
 	}
 }
 
@@ -220,27 +220,27 @@ ol, ul{list-style: none;}
 	.mainmenu .gnb_menu ul li{
 		text-align: justify;
 		margin-left:-10px;
-		padding:3px 1%;
+		padding:3px ;
 	}
 
 	.mainmenu .gnb_menu .gnb_btn{
 		top:7px;
 	    right: 7px;
 	}
-	/*.mainmenu .gnb_menu  ul .bienvenu,.portfolio{
-	    padding: 3px 0 0 15px;
+	.mainmenu .gnb_menu  ul .portfolio{
+		width:115px
 	}
-	.mainmenu .gnb_menu  ul .outil,.contact{
+	/*.mainmenu .gnb_menu  ul .outil,.contact{
 	    padding: 3px 15px 0 0;
 	}*/
 }
 @media screen and  (max-width: 460px){
 	.mainmenu .gnb_menu ul li{
-		padding:3px 40px;
+		padding:3px 25px;
 
 	}
 	.mainmenu .gnb_menu  ul .outil{
-	    padding: 3px 50px;
+	    padding: 3px 30px;
 	}
 
 }
@@ -265,8 +265,9 @@ ol, ul{list-style: none;}
 }
 
 #themes{
-	height:720px;
-	padding: 150px 0 180px;
+	height:735px;
+	padding: 150px 0 1px;
+	overflow-x: hidden;
 
 }
 #about{
