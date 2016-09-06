@@ -110,7 +110,7 @@ $(window).load(function() {
 	//====================================//
 
 	var idx = 0;
-	var slideWidth = $('.port').width()
+	var slideWidth = $('.port').width()+500
 	$('.port .next').click(function(){
 		console.log('aa')
 
@@ -139,12 +139,12 @@ $(window).load(function() {
 	$('.port .prev').click(function(){
 
         $('.slide .slide_port>div').eq(idx).removeClass('on').children('div').animate({
-                left:slideWidth
+                'left':slideWidth
             }).parent('div').prev().addClass('on').children('div').css({
-                display:'block',
-                left:-slideWidth
+                'display':'block',
+                'left':-slideWidth
             }).stop().animate({
-                left:'10%'
+                'left':'10%'
             })
 
 
